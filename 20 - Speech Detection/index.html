@@ -15,7 +15,6 @@
 
   const recognition = new SpeechRecognition();
   recognition.interimResults = true;
-  recognition.continuous = true;
 
   let p = document.createElement('p');
   const words = document.querySelector('.words');
@@ -45,6 +44,10 @@
 
 
   <style>
+    #__cornify_count{
+        display: none;
+    }
+
     html {
       font-size: 10px;
     }
